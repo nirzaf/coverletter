@@ -1,0 +1,357 @@
+@media (max-width: 1750px){
+    .best_3d_area .left_3d::before {
+        background-size: contain;
+        width: 100%;
+    }
+}
+@media (max-width: 1520px){
+    .shap_mobile {
+        padding-left: 80px;
+        width: 38%;
+        padding-top: 60px;
+    }
+    .text_3d {
+        width: 62%;
+        padding-top: 100px;
+    }
+    .shap_mobile img{
+        max-width: 100%;
+    }
+    .best_3d_area {
+        min-height: auto;
+    }
+    .shap_slider_inner {
+        margin-right: 114px;
+        margin-top: 226px;
+    }
+    .shap_slider_inner .owl-dots {
+        margin-top: 6px;
+        margin-right: 55px;
+    }
+}
+@media (max-width: 1300px){
+    .shap_slider_inner {
+        margin-right: 12px;
+    }
+    .shap_slider_inner .owl-dots {
+        margin-right: 126px;
+    }
+}
+@media (max-width: 1230px){
+    .best_3d_area .left_3d {
+        width: 100%;
+        float: none;
+    }
+    .best_3d_area .left_3d::before {
+	    display: none;
+    }
+    .shap_slider_inner .item {
+        color: #0b1033;
+    }
+    .shap_slider_inner .item p {
+        color: #7c8d93;
+    }
+    .best_3d_area {
+        display: block;
+    }
+    .best_3d_area .right_text {
+        width: 100%;
+        float: none;
+        overflow: hidden;
+    }
+    .shap_slider_inner {
+        max-width: 500px;
+        float: none;
+        margin: 40px auto 0px;
+    }
+    .shap_slider_inner .owl-dots .owl-dot {
+        background: #000;
+    }
+}
+@media (max-width: 1199px){
+    .team_people_text ul li {
+        width: calc(100% / 1);
+        float: none;
+        margin-bottom: 15px;
+    }
+    .team_people_text ul li:nth-child(2n) {
+        padding-left: 0px;
+    }
+    .team_people_text p {
+        padding-bottom: 24px;
+    }
+    .get_in_touch_area .touch_details {
+        margin-left: 0px;
+    }
+    .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .single_img {
+        display: none;
+    }
+}
+@media (max-width: 991px){
+    .main_menu_area {
+        padding: 0px 0px;
+    }
+    .navbar-light .navbar-brand {
+        padding: 20px 0px 20px 15px;
+    }
+    .main_menu_area .navbar .navbar-nav li {
+        display: block;
+        margin-right: 0px;
+    }
+    .main_menu_area .navbar .navbar-nav li a {
+        display: block;
+        line-height: 50px;
+        padding: 0px 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, .05);
+    }
+    .main_menu_area .navbar .navbar-nav li:hover a, .main_menu_area .navbar .navbar-nav li.active a {
+        color: #97ccfe;
+    }
+    .main_menu_area .navbar .navbar-nav li a:focus{
+        color: #97ccfe;
+    }
+    .main_menu_area .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+        color: #97ccfe;
+    }
+    .main_menu_area .navbar .navbar-nav {
+        display: block;
+        text-align: left;
+    }
+    .main_menu_area .navbar .navbar-collapse {
+        background: rgba(0, 0, 0, 1);
+        max-height: 306px;
+        overflow-y: scroll;
+    }
+    .main_menu_area .navbar .navbar-toggler {
+        padding: 0px 15px 0px 0px;
+        cursor: pointer;
+    }
+    .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu {
+        background: transparent;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu li a {
+        line-height: 50px;
+        padding: 0px 20px;
+    }
+    .text_3d {
+        padding-left: 15px;
+    }
+    .team_people_text {
+        max-width: 540px;
+        float: none;
+        margin: auto;
+    }
+    .team_img_inner {
+        max-width: 591px;
+        margin: 30px auto -20px;
+    }
+    .touch_details {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    .contact_us_form {
+        margin-top: 0px;
+    }
+    .footer_widget_inner .col-sm-6{
+        margin-bottom: 30px;
+    }
+    .footer_widget_inner .col-sm-6:last-child{
+        margin-bottom: 0px;
+    }
+    .footer_widget_area {
+        padding: 100px 0px 100px 0px;
+    }
+    .challange_text_inner {
+        max-width: 545px;
+        float: none;
+        margin: auto;
+    }
+    .challange_img {
+       display: block;
+        margin-top: 50px;
+    }
+    .testimonials_slider::before {
+        display: none;
+    }
+    .testimonials_slider .owl-dots .owl-dot {
+        background: #0b1033;
+    }
+    .testimonials_slider .owl-dots .owl-dot.active {
+        background: #97ccfe;
+    }
+    .testimonials_area {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    .company_skill {
+        padding-top: 40px;
+    }
+    .circle_progress .circle_progress_inner {
+        margin-bottom: 30px;
+    }
+    .circle_chart_area .row{
+        margin-bottom: -30px;
+    }
+    .service_solution_area::before {
+        opacity: 1;
+    }
+    .blog_right_sidebar{
+        max-width: 270px;
+        margin-top: 100px;
+    }
+    
+}
+@media (max-width: 767px){
+    .shap_mobile {
+        display: none;
+    }
+    .talk_text a {
+        font-size: 38px;
+    }
+    .talk_text h4 {
+        font-size: 38px;
+    }
+    .text_3d {
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .best_3d_area {
+       padding: 0px 15px;
+    }
+    .shap_slider_inner .owl-dots {
+        margin-right: 0;
+        text-align: center;
+    }
+    .bd-callout {
+        left: 0px;
+        padding: 30px 15px;
+        max-width: 300px;
+    }
+    .bd-callout h4 {
+        display: block;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .blog_img .blog_date {
+        position: relative;
+        left: 30px;
+        top: 22px;
+    }
+    .buttons_area .submit_btn {
+        margin-left: 8px;
+        display: block;
+        margin-top: 20px;
+    }
+    .buttons_area .more_btn{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 575px){
+    .team_img_inner .team_img_item img {
+        max-width: 100%;
+    }
+    .bd-callout {
+        position: relative;
+        transform: translateY(0%);
+        margin: auto;
+    }
+    .footer_widget_inner{
+        max-width: 320px;
+        margin: auto;
+    }
+    .footer_copyright{
+        text-align: center;
+    }
+    .banner_area::before {
+        max-width: 100%;
+        background-size: cover;
+    }
+    .banner_inner_text {
+        padding-top: 150px;
+    }
+    .banner_inner_text h2 {
+        font-size: 50px;
+    }
+    .banner_inner_text p {
+        font-size: 20px;
+    }
+    .challange_text_inner p {
+        padding-right: 0px;
+    }
+    .talk_area {
+        padding: 80px 0px 80px 0px;
+    }
+    .talk_text h4 {
+        font-size: 26px;
+        padding-bottom: 16px;
+    }
+    .talk_text a {
+        font-size: 20px;
+    }
+    .portfolio_filter {
+        padding: 95px 0px 50px 0px;
+    }
+    .s_blog_social ul li:first-child {
+        margin-left: 15px;
+    }
+    .s_blog_social ul li {
+        margin-left: 15px;
+    }
+    .mileston_item {
+        text-align: center;
+    }
+    .elements_title {
+        text-align: center;
+    }
+}
+@media (max-width: 480px){
+    .l_title h2 {
+        font-size: 32px;
+    }
+    .c_title h2 {
+        font-size: 32px;
+    }
+    .blog_text {
+        padding: 40px 15px 65px 15px;
+    }
+    .blog_img .blog_date {
+        left: 15px;
+    }
+    .s_blog_social {
+        padding-left: 15px;
+    }
+    .blog_author .media {
+        display: block;
+    }
+    .blog_author .media .d-flex {
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+    .blog_comment .media {
+        display: block;
+    }
+    .blog_comment .media .d-flex {
+        display: block !important;
+        padding: 20px 0px 0px 0px;
+    }
+    .blog_comment .media .media-body {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .blog_comment h3 {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .buttons_area .solid_btn {
+        margin-left: 0px;
+        display: inline-block;
+    }
+    .contact_map_area .mapBox1 {
+        min-height: 575px;
+    }
+}

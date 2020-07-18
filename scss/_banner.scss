@@ -1,0 +1,46 @@
+/* Banner Area css
+============================================================================================ */
+.banner_area{
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    &:before{
+        content: "";
+        background: url(../img/banner/banner-bg.png) no-repeat scroll center right;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        max-width: 1233px;
+        width: 100%;
+    }
+}
+.banner_inner_text{
+    padding-top: 200px;
+    position: relative;
+    padding-bottom: 95px;
+    &:before{
+        content: "";
+        width: 213px;
+        height: 1px;
+        position: absolute;
+        background: #ced0e0;
+        left: 0px;
+        bottom: 0px;
+    }
+    h2{
+        font-size: 72px;
+        color: $dip;
+        font-family: $rob;
+        font-weight: normal;
+    }
+    p{
+        font-size: 24px;
+        color: #6b7d8e;
+        font-family: $rob;
+        font-weight: normal;
+        padding-top: 15px;
+    }
+}
+/* End Banner Area css
+============================================================================================ */

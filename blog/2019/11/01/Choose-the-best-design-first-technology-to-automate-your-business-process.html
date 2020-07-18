@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Choose the Best Design First Technology to Automate Your Business Process | Quadrate Tech School</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Choose the Best Design First Technology to Automate Your Business Process" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="You want to choose a technology to automate the booking process for your bike rental business. You want to streamline and modernize this process as it is performed on your original campus. You also want to integrate a bike tracking technology that is used on the new campus where you&#39;ve recently obtained the rights to operate the existing bike rental business. In this exercise, we&#39;ll examine this scenario in detail and choose which technology to use. Scenario On your original campus, you have five bike rental shops. Each shop has a list of bikes for rent and its own database that records the bikes and their features and whether they are already rented or in the shop. Currently, each bike can only be rented from its home shop. When a customer returns a bike to another shop, your staff move it back to the shop where it is listed on the database. You&#39;d like to change the process so that each bike can be rented from any shop. However, you want to ensure staff can find out quickly where each bike is. At the university in the next state, the bike rental business invested in a third party system to track bike locations. When a bike arrives back at a store, a unique barcode on the crossbar is scanned. The bike tracking database is automatically updated with the name of the shop that scanned the barcode. When a bike leaves a shop with a customer, the location is changed to &quot;On Hire&quot; and the customer name is recorded in a separate column. This system has proved helpful when a customer asks for a bike with specific frame size and/or specific features, such as an electric motor or all-terrain suspension. If a shop doesn&#39;t have a bike with the right equipment, the shop can quickly find out where such a bike is and get it or send the customer to the right shop. This bike location database has a REST API that you can call from other systems. Your managing director wants to be able to understand clearly the workflow that you develop. There were problems in the past when documentation has not been kept in-sync with custom code and your director wants to see the process as it&#39;s implemented. Business Process You want to update the bike reservation and rental process on both campuses to the following workflow: The details are as follows: A customer requests a bike on the phone, in person, or through the website. Shop staff record the customer&#39;s details and frame size. Does the customer need specific features such as an electric motor, suspension, or a child trailer? If so what are those features? Where are all the bikes with that frame size and those features? This information is obtained from the bike location database and is kept up-to-date by the barcode scanning system. Is there a bike with the right features and frame size in the right shop? If yes book that bike. If not, where is the nearest bike? Reserve that bike. Send an email to staff to move the bike to the customer. Scan barcode in new location. Give the bike to the customer and update location to &quot;On Hire&quot;. Take payment from the customer. This is a simplification of the entire process. For simplicity, we&#39;ve omitted edge cases such as no bike with the desired frame size or features is available for rent. Perhaps you can think of other cases not covered by this simplified process. Choosing a technology Let&#39;s look at the Azure technologies available to implement the business process and integrate with the bike location database: Microsoft Flow Azure Logic Apps Azure Functions Azure Service Apps WebJobs You could use any of these technologies and others to build a workflow for this business process. Each technology can also integrate with any REST API, so you could also use any of these technologies to integrate with the bike location system. How then, can you choose? Design-first or code-first? We know that your Managing Director and her staff want to understand the workflow and a higher level than examining the code and implementation. She also doesn&#39;t like separate documents describing a process, because it so easily becomes out-of-date when the process changes. If you choose a design-first approach, the workflow is visualized in an easy-to-understand design surface. In addition, that diagram is not a separate document, but a picture of the process as it is implemented. The benefit is that there&#39;s no possibility that the diagram is not updated when the process is changed. For this reason, choose a design-first approach. Microsoft Flow or Azure Logic Apps? Now you must choose from the two design-first technologies: Microsoft Flow Azure Logic Apps There&#39;s no suggestion in the scenario that shop staff should be able to modify the business process. In addition, to connect to the bike location database through its REST API, you will need to create a custom connector. This is a developer task. It seems sensible that the development of the custom connector and the workflow should be done by the same person or team. Since these must be developers, it&#39;s best to use Azure Logic Apps. As this exercise shows, we can narrow down the technology to use for a given solution by simply understanding the business process and the audience." />
+<meta property="og:description" content="You want to choose a technology to automate the booking process for your bike rental business. You want to streamline and modernize this process as it is performed on your original campus. You also want to integrate a bike tracking technology that is used on the new campus where you&#39;ve recently obtained the rights to operate the existing bike rental business. In this exercise, we&#39;ll examine this scenario in detail and choose which technology to use. Scenario On your original campus, you have five bike rental shops. Each shop has a list of bikes for rent and its own database that records the bikes and their features and whether they are already rented or in the shop. Currently, each bike can only be rented from its home shop. When a customer returns a bike to another shop, your staff move it back to the shop where it is listed on the database. You&#39;d like to change the process so that each bike can be rented from any shop. However, you want to ensure staff can find out quickly where each bike is. At the university in the next state, the bike rental business invested in a third party system to track bike locations. When a bike arrives back at a store, a unique barcode on the crossbar is scanned. The bike tracking database is automatically updated with the name of the shop that scanned the barcode. When a bike leaves a shop with a customer, the location is changed to &quot;On Hire&quot; and the customer name is recorded in a separate column. This system has proved helpful when a customer asks for a bike with specific frame size and/or specific features, such as an electric motor or all-terrain suspension. If a shop doesn&#39;t have a bike with the right equipment, the shop can quickly find out where such a bike is and get it or send the customer to the right shop. This bike location database has a REST API that you can call from other systems. Your managing director wants to be able to understand clearly the workflow that you develop. There were problems in the past when documentation has not been kept in-sync with custom code and your director wants to see the process as it&#39;s implemented. Business Process You want to update the bike reservation and rental process on both campuses to the following workflow: The details are as follows: A customer requests a bike on the phone, in person, or through the website. Shop staff record the customer&#39;s details and frame size. Does the customer need specific features such as an electric motor, suspension, or a child trailer? If so what are those features? Where are all the bikes with that frame size and those features? This information is obtained from the bike location database and is kept up-to-date by the barcode scanning system. Is there a bike with the right features and frame size in the right shop? If yes book that bike. If not, where is the nearest bike? Reserve that bike. Send an email to staff to move the bike to the customer. Scan barcode in new location. Give the bike to the customer and update location to &quot;On Hire&quot;. Take payment from the customer. This is a simplification of the entire process. For simplicity, we&#39;ve omitted edge cases such as no bike with the desired frame size or features is available for rent. Perhaps you can think of other cases not covered by this simplified process. Choosing a technology Let&#39;s look at the Azure technologies available to implement the business process and integrate with the bike location database: Microsoft Flow Azure Logic Apps Azure Functions Azure Service Apps WebJobs You could use any of these technologies and others to build a workflow for this business process. Each technology can also integrate with any REST API, so you could also use any of these technologies to integrate with the bike location system. How then, can you choose? Design-first or code-first? We know that your Managing Director and her staff want to understand the workflow and a higher level than examining the code and implementation. She also doesn&#39;t like separate documents describing a process, because it so easily becomes out-of-date when the process changes. If you choose a design-first approach, the workflow is visualized in an easy-to-understand design surface. In addition, that diagram is not a separate document, but a picture of the process as it is implemented. The benefit is that there&#39;s no possibility that the diagram is not updated when the process is changed. For this reason, choose a design-first approach. Microsoft Flow or Azure Logic Apps? Now you must choose from the two design-first technologies: Microsoft Flow Azure Logic Apps There&#39;s no suggestion in the scenario that shop staff should be able to modify the business process. In addition, to connect to the bike location database through its REST API, you will need to create a custom connector. This is a developer task. It seems sensible that the development of the custom connector and the workflow should be done by the same person or team. Since these must be developers, it&#39;s best to use Azure Logic Apps. As this exercise shows, we can narrow down the technology to use for a given solution by simply understanding the business process and the audience." />
+<link rel="canonical" href="https://quadrate.lk/blog/blog/2019/11/01/Choose-the-best-design-first-technology-to-automate-your-business-process.html" />
+<meta property="og:url" content="https://quadrate.lk/blog/blog/2019/11/01/Choose-the-best-design-first-technology-to-automate-your-business-process.html" />
+<meta property="og:site_name" content="Quadrate Tech School" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-01T00:22:11+05:30" />
+<script type="application/ld+json">
+{"headline":"Choose the Best Design First Technology to Automate Your Business Process","dateModified":"2019-11-01T00:22:11+05:30","datePublished":"2019-11-01T00:22:11+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"https://quadrate.lk/blog/blog/2019/11/01/Choose-the-best-design-first-technology-to-automate-your-business-process.html"},"description":"You want to choose a technology to automate the booking process for your bike rental business. You want to streamline and modernize this process as it is performed on your original campus. You also want to integrate a bike tracking technology that is used on the new campus where you&#39;ve recently obtained the rights to operate the existing bike rental business. In this exercise, we&#39;ll examine this scenario in detail and choose which technology to use. Scenario On your original campus, you have five bike rental shops. Each shop has a list of bikes for rent and its own database that records the bikes and their features and whether they are already rented or in the shop. Currently, each bike can only be rented from its home shop. When a customer returns a bike to another shop, your staff move it back to the shop where it is listed on the database. You&#39;d like to change the process so that each bike can be rented from any shop. However, you want to ensure staff can find out quickly where each bike is. At the university in the next state, the bike rental business invested in a third party system to track bike locations. When a bike arrives back at a store, a unique barcode on the crossbar is scanned. The bike tracking database is automatically updated with the name of the shop that scanned the barcode. When a bike leaves a shop with a customer, the location is changed to &quot;On Hire&quot; and the customer name is recorded in a separate column. This system has proved helpful when a customer asks for a bike with specific frame size and/or specific features, such as an electric motor or all-terrain suspension. If a shop doesn&#39;t have a bike with the right equipment, the shop can quickly find out where such a bike is and get it or send the customer to the right shop. This bike location database has a REST API that you can call from other systems. Your managing director wants to be able to understand clearly the workflow that you develop. There were problems in the past when documentation has not been kept in-sync with custom code and your director wants to see the process as it&#39;s implemented. Business Process You want to update the bike reservation and rental process on both campuses to the following workflow: The details are as follows: A customer requests a bike on the phone, in person, or through the website. Shop staff record the customer&#39;s details and frame size. Does the customer need specific features such as an electric motor, suspension, or a child trailer? If so what are those features? Where are all the bikes with that frame size and those features? This information is obtained from the bike location database and is kept up-to-date by the barcode scanning system. Is there a bike with the right features and frame size in the right shop? If yes book that bike. If not, where is the nearest bike? Reserve that bike. Send an email to staff to move the bike to the customer. Scan barcode in new location. Give the bike to the customer and update location to &quot;On Hire&quot;. Take payment from the customer. This is a simplification of the entire process. For simplicity, we&#39;ve omitted edge cases such as no bike with the desired frame size or features is available for rent. Perhaps you can think of other cases not covered by this simplified process. Choosing a technology Let&#39;s look at the Azure technologies available to implement the business process and integrate with the bike location database: Microsoft Flow Azure Logic Apps Azure Functions Azure Service Apps WebJobs You could use any of these technologies and others to build a workflow for this business process. Each technology can also integrate with any REST API, so you could also use any of these technologies to integrate with the bike location system. How then, can you choose? Design-first or code-first? We know that your Managing Director and her staff want to understand the workflow and a higher level than examining the code and implementation. She also doesn&#39;t like separate documents describing a process, because it so easily becomes out-of-date when the process changes. If you choose a design-first approach, the workflow is visualized in an easy-to-understand design surface. In addition, that diagram is not a separate document, but a picture of the process as it is implemented. The benefit is that there&#39;s no possibility that the diagram is not updated when the process is changed. For this reason, choose a design-first approach. Microsoft Flow or Azure Logic Apps? Now you must choose from the two design-first technologies: Microsoft Flow Azure Logic Apps There&#39;s no suggestion in the scenario that shop staff should be able to modify the business process. In addition, to connect to the bike location database through its REST API, you will need to create a custom connector. This is a developer task. It seems sensible that the development of the custom connector and the workflow should be done by the same person or team. Since these must be developers, it&#39;s best to use Azure Logic Apps. As this exercise shows, we can narrow down the technology to use for a given solution by simply understanding the business process and the audience.","url":"https://quadrate.lk/blog/blog/2019/11/01/Choose-the-best-design-first-technology-to-automate-your-business-process.html","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://quadrate.lk/blog/blog/feed.xml" title="Quadrate Tech School" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Quadrate Tech School</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Choose the Best Design First Technology to Automate Your Business Process</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-11-01T00:22:11+05:30" itemprop="datePublished">Nov 1, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>You want to choose a technology to automate the booking process for your bike rental business.</p>
+<p>You want to streamline and modernize this process as it is performed on your original campus. You also want to integrate a bike tracking technology that is used on the new campus where you've recently obtained the rights to operate the existing bike rental business.</p>
+<p>In this exercise, we'll examine this scenario in detail and choose which technology to use.</p>
+<h2 id="scenario">Scenario</h2>
+<p>On your original campus, you have five bike rental shops. Each shop has a list of bikes for rent and its own database that records the bikes and their features and whether they are already rented or in the shop.</p>
+<p>Currently, each bike can only be rented from its home shop. When a customer returns a bike to another shop, your staff move it back to the shop where it is listed on the database. You'd like to change the process so that each bike can be rented from any shop. However, you want to ensure staff can find out quickly where each bike is.</p>
+<p>At the university in the next state, the bike rental business invested in a third party system to track bike locations. When a bike arrives back at a store, a unique barcode on the crossbar is scanned. The bike tracking database is automatically updated with the name of the shop that scanned the barcode. When a bike leaves a shop with a customer, the location is changed to &quot;On Hire&quot; and the customer name is recorded in a separate column.</p>
+<p>This system has proved helpful when a customer asks for a bike with specific frame size and/or specific features, such as an electric motor or all-terrain suspension. If a shop doesn't have a bike with the right equipment, the shop can quickly find out where such a bike is and get it or send the customer to the right shop. This bike location database has a REST API that you can call from other systems.</p>
+<p>Your managing director wants to be able to understand clearly the workflow that you develop. There were problems in the past when documentation has not been kept in-sync with custom code and your director wants to see the process as it's implemented.</p>
+<h2 id="business-process">Business Process</h2>
+<p>You want to update the bike reservation and rental process on both campuses to the following workflow:</p>
+<p><img src="https://docs.microsoft.com/en-us/learn/modules/choose-azure-service-to-integrate-and-automate-business-processes/media/4-bike-hire-workflow.png" alt="Bike booking and rental workflow" data-linktype="relative-path" /></p>
+<p>The details are as follows:</p>
+<ol>
+<li>A customer requests a bike on the phone, in person, or through the website.</li>
+<li>Shop staff record the customer's details and frame size.</li>
+<li>Does the customer need specific features such as an electric motor, suspension, or a child trailer? If so what are those features?</li>
+<li>Where are all the bikes with that frame size and  those features? This information is obtained from the bike location database and is kept up-to-date by the barcode scanning system.</li>
+<li>Is there a bike with the right features and frame size in the right shop? If yes book that bike.
+<ol>
+<li>If not, where is the nearest bike? Reserve that bike.</li>
+<li>Send an email to staff to move the bike to the customer.</li>
+<li>Scan barcode in new location.</li>
+</ol>
+</li>
+<li>Give the bike to the customer and update location to &quot;On Hire&quot;.</li>
+<li>Take payment from the customer.</li>
+</ol>
+<p>This is a simplification of the entire process. For simplicity, we've omitted edge cases such as no bike with the desired frame size or features is available for rent. Perhaps you can think of other cases not covered by this simplified process.</p>
+<h2 id="choosing-a-technology">Choosing a technology</h2>
+<p>Let's look at the Azure technologies available to implement the business process and integrate with the bike location database:</p>
+<ul>
+<li>Microsoft Flow</li>
+<li>Azure Logic Apps</li>
+<li>Azure Functions</li>
+<li>Azure Service Apps WebJobs</li>
+</ul>
+<p>You could use any of these technologies and others to build a workflow for this business process. Each technology can also integrate with any REST API, so you could also use any of these technologies to integrate with the bike location system. How then, can you choose?</p>
+<h3 id="design-first-or-code-first">Design-first or code-first?</h3>
+<p>We know that your Managing Director and her staff want to understand the workflow and a higher level than examining the code and implementation. She also doesn't like separate documents describing a process, because it so easily becomes out-of-date when the process changes.</p>
+<p>If you choose a design-first approach, the workflow is visualized in an easy-to-understand design surface. In addition, that diagram is not a separate document, but a picture of the process as it is implemented. The benefit is that there's no possibility that the diagram is not updated when the process is changed.</p>
+<p>For this reason, choose a design-first approach.</p>
+<h3 id="microsoft-flow-or-azure-logic-apps">Microsoft Flow or Azure Logic Apps?</h3>
+<p>Now you must choose from the two design-first technologies:</p>
+<ul>
+<li>Microsoft Flow</li>
+<li>Azure Logic Apps</li>
+</ul>
+<p>There's no suggestion in the scenario that shop staff should be able to modify the business process. In addition, to connect to the bike location database through its REST API, you will need to create a custom connector. This is a developer task.</p>
+<p>It seems sensible that the development of the custom connector and the workflow should be done by the same person or team. Since these must be developers, it's best to use Azure Logic Apps.</p>
+<p>As this exercise shows, we can narrow down the technology to use for a given solution by simply understanding the business process and the audience.</p>
+
+
+  </div><a class="u-url" href="/blog/2019/11/01/Choose-the-best-design-first-technology-to-automate-your-business-process.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Quadrate Tech School</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Quadrate Tech School</li><li><a class="u-email" href="mailto:info@quadrate.lk">info@quadrate.lk</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/quadrate-tech"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">quadrate-tech</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Quadrate Tech School is a complete free virtual Academy to learn programming languages and other skills</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

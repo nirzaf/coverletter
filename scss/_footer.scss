@@ -1,0 +1,128 @@
+/* Footer Area css
+============================================================================================ */
+.footr_area{
+    
+}
+.footer_widget_area{
+    background: url(../img/footer-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    padding: 130px 0px 115px 0px;
+}
+.footer_widget_inner{
+    
+}
+.f_widget{
+    
+}
+.f_title{
+    padding-bottom: 45px;
+    h3{
+        font-size: 16px;
+        color: #fff;
+        font-family: $rob;
+        font-weight: 500;
+    }
+}
+.f_about_widget{
+    padding-right: 35px;
+    img{
+        padding-bottom: 55px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 28px;
+        color: #fff;
+        font-family: $rob;
+        font-weight: 500;
+    }
+}
+.f_insta_widget{
+    ul{
+        overflow: hidden;
+        margin: -1px;
+        li{
+            width: calc(100% / 4);
+            float: left;
+            a{
+                display: inline-block;
+                padding: 1px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.f_subs_widget{
+    .input-group{
+        display: block;
+        input{
+            display: block;
+            width: 100%;
+            border-radius: 0px;
+            border: none;
+            height: 52px;
+            padding: 0px 30px;
+            font-size: 12px;
+            font-family: $rob;
+            font-style: italic;
+            color: #9b9b9b;
+            @include placeholder{
+                font-size: 12px;
+                font-family: $rob;
+                font-style: italic;
+                color: #9b9b9b;
+            }
+        }
+        .input-group-btn{
+            margin-left: 0px;
+            display: block;
+            margin-top: 25px;
+            .submit_btn{
+                margin-left: 0px;
+                border-radius: 35px !important;
+                &:hover{
+                    border-color: #8cc4fb;
+                }
+            }
+        }
+    }
+}
+.footer_copyright{
+    overflow: hidden;
+    background: #11173b;
+    padding: 35px 0px;
+    .float-sm-left{
+        h5{
+            font-size: 14px;
+            color: #2a2f56;
+            font-family: $rob;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 29px;
+        }
+    }    
+    .float-sm-right{
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 32px;
+                a{
+                    font-size: 14px;
+                    color: #2a2f56;
+                    @include transition;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover{
+                    a{
+                        color: #fff;
+                    }
+                }    
+            }
+        }
+    }    
+}
+/* End Footer Area css
+============================================================================================ */

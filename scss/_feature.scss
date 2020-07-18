@@ -1,0 +1,606 @@
+/* Feature Area css
+============================================================================================ */
+.feature_area{
+    padding-top: 70px;
+}
+.feature_item{
+    text-align: center;
+    padding: 40px 0px 60px 0px;
+    @include transition;
+    .f_icon{
+        min-height: 91px;
+        position: relative;
+        img{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    h4{
+        color: $dip;
+        font-family: $rob;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 45px 0px 20px 0px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 28px;
+        font-family: $rob;
+        color: $pfont;
+        font-weight: 500;
+        max-width: 290px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    .more_btn{
+        opacity: 0;
+    }
+    &:hover{
+        box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+        .more_btn{
+            opacity: 1;
+        }
+    }
+}
+
+.service_feature{
+    border-bottom: 1px solid #bbbec1;
+    padding-top: 100px;
+    overflow: hidden;
+    .feature_inner{
+        margin-bottom: -50px;
+        .feature_item{
+            margin-bottom: 50px;
+            .more_btn{
+                opacity: 1;
+                background: transparent;
+                border-color: transparent;
+                background-image: linear-gradient(left, #6ebdfe, #9b8aff);
+                color:transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                @include transition;
+                background-size: 200% auto;
+            }
+            &:hover{
+                .more_btn{
+                    color: #fff;
+                    background-image: linear-gradient(to right, #70bafe 0%, #998dff 51%, #70bafe 100%);
+                    border-color: rgba(204, 241, 255, .5);
+                    background-clip: inherit;
+                }
+            }    
+        }
+    }
+}
+
+
+/* End Feature Area css
+============================================================================================ */
+
+/* Team People Area css
+============================================================================================ */
+.team_people_area{
+    overflow: hidden;
+    padding-top: 90px;
+}
+.team_people_text{
+    max-width: 540px;
+    float: right;
+    p{
+        font-family: $rob;
+        color: $pfont;
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 500;
+        padding-bottom: 45px;
+    }
+    ul{
+        padding-left: 20px;
+        li{
+            width: calc(100% / 2);
+            float: left;
+            margin-bottom: 15px;
+            a{
+                padding-left: 18px;
+                font-family: $rob;
+                color: $pfont;
+                font-size: 15px;
+                line-height: 28px;
+                font-weight: 500;
+                position: relative;
+                @include transition;
+                &:before{
+                    content: "";
+                    height: 5px;
+                    width: 5px;
+                    border-radius: 50%;
+                    background: #a6d7ff;
+                    position: absolute; 
+                    left: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include transition;
+                }
+            }
+            &:nth-child(even){
+                padding-left: 22px;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            &:hover{
+                a{
+                    color: #a6d7ff;
+                    &:before{
+                        left: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+.team_img_inner{
+    max-width: 591px;
+    margin-bottom: -20px;
+    margin-left: 150px;
+    .row{
+        margin-left: -10px;
+        margin-right: -10px;
+        .col-lg-6{
+            padding: 0px 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+    }
+    .team_img_item{
+        overflow: hidden;
+    }
+}
+/* End Team People Area css
+============================================================================================ */
+
+/* Challange Area css
+============================================================================================ */
+.challange_area{
+    overflow: hidden;
+}
+.challange_text_inner{
+    max-width: 545px;
+    float: right;
+    p{
+        font-size: 15px;
+        line-height: 28px;
+        color: #7c8d93;
+        font-family: $rob;
+        font-weight: 500;
+        padding-right: 25px;
+    }   
+    .c_video{
+        padding-top: 35px;
+        a{
+            font-size: 18px;
+            font-family: $rob;
+            font-weight: 500;
+            color: $dip;
+            img{
+                padding-right: 15px;
+            }
+        }
+    }
+}
+.challange_img{
+    display: flex;
+    .challange_img_inner{
+        align-self: center;
+        box-shadow: 0px 27px 68px 0px rgba(0, 0, 0, 0.4);
+    }
+}
+/* End Challange Area css
+============================================================================================ */
+
+/* We Are Company Area css
+============================================================================================ */
+.we_company_area{
+    
+}
+.company_inner{
+    
+}
+.left_company_text{
+    p{
+        font-size: 15px;
+        color: $pfont;
+        font-family: $rob;
+        font-weight: 500;
+        padding-right: 20px;
+    }
+}
+.company_skill{
+    padding-top: 90px;
+    p{
+        font-size: 18px;
+        font-family: $rob;
+        line-height: 28px;
+        color: $pfont;
+        font-weight: 500;
+        padding-bottom: 70px;
+    }    
+}
+.our_skill_inner{
+    .single_skill{
+        margin-bottom: 20px;
+        h3{
+            font-size: 15px;
+            font-family: $rob;
+            color: $pfont;
+            font-weight: 500;
+            padding-bottom: 12px;
+        }
+        .progress{
+            height: 5px;
+            background: #f4f8fc;
+            border-radius: 0px;
+            overflow: visible;
+            .progress-bar{
+                background-image: -moz-linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                background-image: -webkit-linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                background-image: -ms-linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                position: relative;
+                .progress_parcent{
+                    position: absolute;
+                    right: 0px;
+                    top: -40px;
+                    background-image: -moz-linear-gradient( 10deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                    background-image: -webkit-linear-gradient( 10deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                    background-image: -ms-linear-gradient( 10deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                    color: #fff;
+                    padding: 0px 16px;
+                    font-size: 14px;
+                    font-family: $rob;
+                    line-height: 34px;
+                    border-radius: 17px;
+                }
+            }
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+.talk_area{
+    background-image: -moz-linear-gradient( 10deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+    background-image: -webkit-linear-gradient( 10deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+    background-image: -ms-linear-gradient( 10deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+    padding: 160px 0px 170px 0px;
+    border-bottom: 2px solid #fff;
+}
+.talk_text{
+    text-align: center;
+    h4{
+        font-size: 48px;
+        color: #fff;
+        font-family: $rob;
+        font-weight: 600;
+        padding-bottom: 26px;
+    }
+    a{
+        font-size: 48px;
+        color: #fff;
+        font-family: $rob;
+        font-weight: 600;
+    }
+}
+/* End We Are Company Area css
+============================================================================================ */
+
+/* Service Solution Area css
+============================================================================================ */
+.service_solution_area{
+    background: url(../img/service-bg.jpg) no-repeat fixed center right;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    &:before{
+        content: "";
+        background: rgba(255, 255, 255, .7);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+.s_solution_inner{
+    
+}
+.s_solution_item{
+    .l_title{
+        
+    }
+    p{
+        font-size: 15px;
+        line-height: 28px;
+        font-family: $rob;
+        font-weight: 500;
+        color: $pfont;
+    }
+}
+.solution_collaps{
+    margin-top: 60px;
+    .card{
+        margin-bottom: 25px;
+        border: none;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        .card-header{
+            padding: 0px;
+            border: none;
+            background-color: transparent;
+            h5{
+                a{
+                    background: #79ccff; 
+                    background: -moz-linear-gradient(left, #79ccff 0%, #9b75ff 100%);
+                    background: -webkit-linear-gradient(left, #79ccff 0%,#9b75ff 100%); 
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79ccff', endColorstr='#9b75ff',GradientType=1 );
+                    display: block;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: $rob;
+                    font-weight: 500;
+                    padding: 11px 25px 11px 20px;
+                    line-height: 26px;
+                    position: relative;
+                    i{
+                        display: inline-block;
+                        font-style: normal;
+                        position: absolute;
+                        right: 20px;
+                        line-height: 30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        & + i{
+                            display: none;
+                        }
+                    }
+                }
+                .collapsed{
+                    i{
+                        display: none;
+                        & + i{
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        .card-body{
+            p{
+                font-size: 15px;
+                line-height: 28px;
+                font-family: $rob;
+                font-weight: normal;
+                color: $pfont;
+            }
+        }
+    }
+}
+/* End Service Solution Area css
+============================================================================================ */
+
+/* Elements Page Area css
+============================================================================================ */
+.elements_title{
+    font-size: 24px;
+    font-family: $rob;
+    font-weight: 500;
+    color: $pfont;
+    font-weight: normal;
+    padding-bottom: 75px;
+}
+.buttons_area{
+    .more_btn{
+        width: 176px;
+    }
+    .submit_btn{
+        border: none;
+        position: relative;
+        width: 158px;
+        height: 56px;
+        margin-left: 45px;
+        cursor: pointer;
+        line-height: 56px;
+        outline: none !important;
+        box-shadow: none !important;
+        &:before{
+            content: "";
+            width: 176px;
+            height: 67px;
+            border: 2px solid #bee1fe;
+            position: absolute;
+            left: -8.5px;
+            top: -5.5px;
+            border-radius: 33px;
+        }
+        &:focus{
+            border: none;
+        }
+    }
+    .solid_btn{
+        margin-left: 40px;
+    }
+}
+
+.progress_bar_area{
+    .elements_title{}
+    .company_skill{
+        padding-top: 0px;
+    }
+    .solution_collaps{
+        margin-top: 30px;
+    }
+}
+.element_service{
+    padding-top: 0px;
+    padding-bottom: 100px;
+    border-bottom: 0px;
+    .elements_title{
+        padding-bottom: 65px;
+    }
+}
+
+.mileston_area{
+    padding-bottom: 100px;
+    .elements_title{
+        padding-bottom: 65px;
+    }
+    .col-lg-3{
+        text-align: center;
+    }
+}
+.mileston_item{
+    display: inline-block;
+    text-align: left;
+    h4{
+        font-size: 72px;
+        font-family: $rob;
+        font-weight: 500;
+        background: -moz-linear-gradient(left, #6ebcfe 0%, #997aff 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #6ebcfe 0%,#997aff 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #6ebcfe 0%,#997aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ebcfe', endColorstr='#997aff',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h5{
+        font-size: 14px;
+        font-family: $rob;
+        font-weight: 500;
+        color: $dip;
+    }
+}
+/* End Elements Page Area css
+============================================================================================ */
+
+/* Best 3d Area css
+============================================================================================ */
+.best_3d_area{
+    overflow: hidden;
+    display: flex;
+    min-height: 887px;
+    .left_3d{
+        width: calc(50% - 160px);
+        float: left;
+        position: relative;
+        &:before{
+            content: "";
+            background: url(../img/3d-slider-shap.png) no-repeat scroll center center;
+            background-size: cover;
+            min-height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 797px;
+            z-index: -1;
+        }
+    }
+    .right_text{
+        width: calc(50% + 160px);
+        float: right;
+    }
+}
+.shap_slider_inner{
+    max-width: 315px;
+    float: right;
+    margin-right: 160px;
+    margin-top: 300px;
+    .item{
+        color: #fff;
+        img{
+            width: auto;
+        }
+        h4{
+            font-size: 24px;
+            line-height: 28px;
+            font-family: $rob;
+            font-weight: bold;
+        }
+        p{
+            font-size: 15px;
+            font-family: $rob;
+            font-weight: 500;
+            line-height: 28px;
+            padding: 25px 0px 55px 0px;
+        }
+        .media{
+            vertical-align: middle;
+            img{
+                align-self: center;
+            }
+            .media-body{
+                padding-left: 18px;
+                h5{
+                    font-size: 15px;
+                    font-family: $rob;
+                    font-weight: 500;
+                    line-height: 28px;
+                    color: $dip;
+                    padding-bottom: 5px;
+                }
+                h6{
+                    font-size: 12px;
+                    font-family: $rob;
+                    font-weight: 500;
+                }
+            }
+        }
+    } 
+    .owl-dots{
+        text-align: right;
+        margin-top: 70px;
+        .owl-dot{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background: #fff;
+            display: inline-block;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            &.active{
+                background: #97ccfe;
+            }
+        }    
+    }
+}
+.text_3d{
+    display: inline-block;
+    padding-left: 80px;
+    padding-top: 150px;
+    width: 54%;
+    float: left;
+    padding-right: 5px;
+    p{
+        font-size: 15px;
+        line-height: 28px;
+        color: $pfont;
+        font-family: $rob;
+        font-weight: 500;
+    }
+}
+.shap_mobile{
+    padding-top: 85px;
+    float: right;
+    width: 46%;
+    padding-left: 130px;
+}
+
+/* End Best 3d Area css
+============================================================================================ */
+

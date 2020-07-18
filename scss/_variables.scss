@@ -1,0 +1,37 @@
+/*font Variables*/
+$rob: 'Roboto', sans-serif;
+$open: 'Open Sans', sans-serif;
+/*Color Variables*/
+
+$baseColor: #97ccfe;
+$dip: #0b1033;
+//$gray: #757575;
+$pfont: #7c8d93;
+
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1,.col-lg-offset-right-1{
+    margin-right: 8.33333333%;
+}
+// Font family link
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700');
+
+//@font-face {
+//    font-family: "ralH";
+//    src: url(../fonts/theme-font/Arial.ttf.woff);
+//}

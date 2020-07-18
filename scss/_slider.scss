@@ -1,0 +1,157 @@
+/* Slider css
+============================================================================================ */
+.main_slider_area{
+    background: url(../img/home-slider/slider-bg-1.png) no-repeat scroll center center;
+    background-size: cover;
+    .rev_slider{
+        .tp-revslider-mainul{
+            li{
+                .slider_text_box{
+                    .first_text{
+                        font-weight: normal !important;
+                        color: $dip;
+                    }
+                    .secand_text{
+                        color: #6b7d8e;
+                    }  
+                    .more_btn{
+                        transition: all 400ms linear !important;
+                        padding: 0px 53px;
+                    }
+                }
+            }
+        }
+        .tp-bullets{
+            left: calc(50% - 970px) !important;
+            .tp-bullet{
+                height: 10px;
+                width: 10px;
+                background: #b3adff;
+                border: 5px solid #fff;
+                &.selected{
+                    background: #97cdfe;
+                    border-color: #97cdfe;
+                }
+            }
+        }
+        .tp-leftarrow, .tp-rightarrow{
+            height: 120px;
+            background-image: linear-gradient(to right, #70bafe 0%, #998dff 51%, #70bafe 100%);
+            background-size: 200% auto;
+            width: 138px;
+            border: 10px solid rgba(204, 241, 255, 0.5);
+            transition: all 400ms ease-out;
+            &:before{
+                line-height: 100px;
+            }
+            &:hover{
+                background-position: right center;
+                color: #fff;
+            }
+        }
+        .tp-leftarrow{
+            border-bottom-right-radius: 60px;
+            border-top-right-radius: 60px;
+            border-left: 0px;
+        }
+        .tp-rightarrow{
+            border-bottom-left-radius: 60px;
+            border-top-left-radius: 60px;
+            border-right: 0px;
+        }
+    }
+}
+/* End Slider css
+============================================================================================ */
+
+/* Testimonials Slider css
+============================================================================================ */
+.testimonials_area{
+    padding-top: 190px;
+    padding-bottom: 130px;
+    border-bottom: 1px solid #bbbec1;
+}
+.testimonials_slider{
+    position: relative;
+    &:before{
+        content: "";
+        background: url(../img/3d-shap.png) no-repeat scroll center center;
+        height: 600px;
+        max-width: 524px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: -210px;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    .owl-item.center{
+        color: #fff;
+        h3{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+        }
+        .media{
+            .media-body{
+                h5{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .testi_item{
+        h3{
+            font-size: 24px;
+            font-family: $rob;
+            font-weight: bold;
+            color: $dip;
+        }
+        p{
+            font-size: 15px;
+            color: $pfont;
+            line-height: 28px;
+            font-weight: normal;
+            padding: 20px 0px 55px 0px;
+        }
+        .media{
+            .d-flex{
+                padding-right: 20px;
+            }
+            .media-body{
+                h4{
+                    font-size: 15px;
+                    font-family: $rob;
+                    font-weight: 500;
+                    color: $dip;
+                    padding-bottom: 8px;
+                }
+                h5{
+                    font-family: $rob;
+                    color: $pfont;
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .owl-dots{
+        text-align: center;
+        z-index: 4;
+        margin-top: 50px;
+        .owl-dot{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background: #fff;
+            display: inline-block;
+            margin-right: 8px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+}
+/* End Testimonials Slider css
+============================================================================================ */

@@ -1,0 +1,71 @@
+/* Button Area css
+============================================================================================ */
+.more_btn{
+    padding: 0px 46px;
+    background-image: linear-gradient(to right, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
+    background-size: 200% auto;
+    z-index: 2;
+    display: inline-block;
+    transition: all 400ms ease-out;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-family: $rob;
+    line-height: 55px;
+    border: 6px solid rgba(204, 241, 255, .5);
+    border-radius: 33px;
+    &:hover{
+        background-position: right center;
+        color: #fff;
+    }
+}
+
+.submit_btn{
+    background-image: linear-gradient(to right, #70bafe 0%, #998dff 51%, #70bafe 100%);
+    background-size: 200% auto;
+    z-index: 2;
+    width: 176px;
+    padding: 0px;
+    display: inline-block;
+    transition: all 400ms ease-out;
+    text-align: center;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #fff;
+    font-size: 15px;
+    font-family: $rob;
+    line-height: 58px;
+    border: 6px solid rgba(204, 241, 255, .5);
+    border-radius: 33px;
+    &:hover{
+        background-position: right center;
+        color: #fff;
+    }
+    &:focus{
+        box-shadow: none;
+        outline: none;
+        border: 6px solid rgba(204, 241, 255, .5);
+    }
+}
+
+.solid_btn{
+    padding: 0px 53px;
+    background: #6fbcfe;
+    z-index: 2;
+    display: inline-block;
+    transition: all 400ms ease-out;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-family: $rob;
+    line-height: 55px;
+    border: 6px solid rgba(204, 241, 255, .5);
+    border-radius: 33px;
+    &:hover{
+        background-position: right center;
+        color: #fff;
+    }
+}
+
+/* Button Area css
+============================================================================================ */
