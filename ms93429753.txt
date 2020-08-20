@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Domain ownership verification file for Office 365 - place in the website root",
-  "Domain": "quadrate.lk",
-  "Id": "53b078b5-0f9c-4535-aca0-ab264c7a2a62"
-}
